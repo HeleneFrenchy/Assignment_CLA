@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feedback Code Labs Academy</title>
+    <style>
+      h1,
+      .date-subject,
+      .more-infos,
+      .study-home,
+      .topics,
+      .feedback,
+      .email,
+      .submit,
+      .scale {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Thank you for joining us for a session at Code Labs Academy!</h1>
+
+    <form>
+      <div class="date-subject">
+        <label for="Session Date">Session Date</label>
+        <input type="date" id="Session Date" name="Session Date" />
+
+        <label for="Subject">Subject</label>
+        <select name="Subject" id="Subject">
+          <option value="Other">Other</option>
+          <option value="Cybersecurity">Cybersecurity</option>
+          <option value="Ux Design">Ux Design</option>
+          <option value="Web Development">Web Development</option>
+        </select>
+      </div>
+      <br />
+      <br />
+      <div class="more-infos">
+        <label for="More Infos"
+          >Please mention any topics you would like to ask further questions or
+          gather more information on.</label
+        >
+        <br />
+        <textarea id="More Infos" name="More Infos" rows="4" cols="25">
+        </textarea>
+      </div>
+      <br />
+      <div class="study-home">
+        Do you study at home?
+        <input type="radio" id="yes" name="response" value="yes" />
+        <label for="yes">Yes</label>
+        <input type="radio" id="no" name="response" value="no" />
+        <label for="no">No</label>
+      </div>
+      <div class="topics">
+        <p>Why are you seeking more information on these topics?</p>
+        <input
+          type="checkbox"
+          id="discussion"
+          name="response"
+          value="discussion"
+        />
+        <label for="discussion"
+          >I am interested in a more in depth discussion</label
+        >
+        <br />
+        <input type="checkbox" id="session" name="response" value="session" />
+        <label for="session">I didn't understand it in the session</label>
+        <br />
+        <input type="checkbox" id="phone" name="response" value="phone" />
+        <label for="phone">Phone apps</label>
+      </div>
+      <br />
+      <br />
+      <div class="scale">
+        <label for="informative"
+          >On a scale of 1 to 5*, please indicate how informative you felt the
+          session was.</label
+        >
+        <input type="text" id="informative" name="informative" />
+        <br />
+        <br />
+        <label for="engaging"
+          >On a scale of 1 to 5*, please indicate how engaging you felt the
+          session was.</label
+        >
+        <input type="text" id="engaging" name="engaging" />
+        <br />
+        <br />
+        <label for="recommend"
+          >On a scale of 1 to 5*; please indicate how likely you feel it is that
+          you would recommend the course to a friend.</label
+        >
+        <input type="text" id="recommend" name="recommend" />
+      </div>
+      <br />
+      <br />
+      <div class="feedback">
+        <label for="Feedback"
+          >Please use this space to give us any other feedback you may
+          have.</label
+        >
+        <br />
+        <textarea id="Feedback" name="Feedback" rows="4" cols="25"></textarea>
+      </div>
+      <br />
+      <br />
+      <div class="email">
+        <label for="email">Email address:</label>
+        <input type="email" id="email" name="email" required />
+      </div>
+      <br />
+      <div class="submit">
+        <input type="submit" value="Submit form" />
+      </div>
+    </form>
+  </body>
+</html>
